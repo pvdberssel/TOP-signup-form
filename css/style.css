@@ -22,10 +22,35 @@ body{
     display:flex;
 }
 
+
 .sidebar{
     width:33vw;
     min-width: 33vw;
     height: 100vh;
+    position:relative;
+    color:white;
+}
+
+.logo-background{
+    position:absolute;
+    top:20%;
+    width:inherit;
+    height:20vh;
+    background-color: rgb(0,0,0,0.4);
+}
+
+.logo{
+    position:absolute;
+    top:20%;
+    left:45%;
+
+}
+
+.copyright{
+    position: absolute;
+    bottom:1%;
+    left:39%;
+    text-align: center;
 }
 img{
     width:inherit;
