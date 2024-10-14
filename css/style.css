@@ -77,7 +77,8 @@ img{
 
     height:33vh;
     width:67vw;
-    padding:2em;
+    padding-left:15px;
+    padding:5px;
     background-color: var(--thistle);
 }
 
@@ -96,6 +97,18 @@ img{
     font-size: 22px;
     font-weight: bold;
     color:white;
+}
+
+input:valid{
+    outline: none;
+    border-width: 3px;
+    border-color:rgb(75, 150, 78);
+}
+
+input:invalid{
+    outline: none;
+    border-width: 1px;
+    border-color:rgb(133, 44, 44);
 }
 .input-group{
     flex: 1;
