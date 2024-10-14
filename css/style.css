@@ -61,3 +61,11 @@ img{
     padding:15px;
     flex-direction: column;
 }
+
+.submit-button{
+    background-color: var(--cambridge-blue);
+    padding:1em;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+}
