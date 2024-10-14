@@ -3,6 +3,19 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+
+
+}
+
+:root{
+    /* CSS HEX */
+    --thistle: #D1BFC7ff;
+    --cambridge-blue: #7B9187ff;
+    --sky-blue: #78C2D3ff;
+    --persimmon: #EF560Aff;
+    --melon: #EBB2ABff;
+    --midnight-green: #123A3Dff;
+    --black: #040B07ff;
 }
 
 body{
@@ -23,15 +36,18 @@ img{
 .signup-form-container{
     display:flex;
     flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
+    align-items: center;
 }
 
 .title-form, .form-body, .form-submit{
+
+
     height:33vh;
-    width:67vw
+    width:67vw;
+    padding:2em;
+    background-color: var(--thistle);
 }
 
 .form-body{
-    background-color: cadetblue;
+    background-color: var(--sky-blue);
 }
