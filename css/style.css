@@ -3,6 +3,7 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 
 }
@@ -75,16 +76,39 @@ img{
 
 .form-body{
     display:flex;
+    flex-direction: column;
     background-color: var(--midnight-green);
-    gap:4em;
+    gap: 1em;
 }
-
+.form-container-text{
+    display:flex;
+    gap: 2em;
+  
+}
+.form-title{
+    font-size: 22px;
+    font-weight: bold;
+    color:white;
+}
 .input-group{
     flex: 1;
     display:flex;
     color:white;
-    padding:15px;
     flex-direction: column;
+    padding:5px;
+}
+
+label{
+    padding:5px;
+}
+
+input{
+    padding:5px;
+    border-radius: 5px;
+}
+
+input:active{
+    border-color:rgb(42, 80, 48);
 }
 
 .submit-button{
