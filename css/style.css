@@ -49,5 +49,15 @@ img{
 }
 
 .form-body{
-    background-color: var(--sky-blue);
+    display:flex;
+    background-color: var(--midnight-green);
+    gap:4em;
+}
+
+.input-group{
+    flex: 1;
+    display:flex;
+    color:white;
+    padding:15px;
+    flex-direction: column;
 }
