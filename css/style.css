@@ -12,10 +12,10 @@
     /* CSS HEX */
     --thistle: #D1BFC7ff;
     --cambridge-blue: #7B9187ff;
-    --sky-blue: #78C2D3ff;
-    --persimmon: #EF560Aff;
+    --sky-blue: rgb(213, 236, 240);
+    --persimmon: rgb(240, 119, 72);
     --melon: #EBB2ABff;
-    --midnight-green: #123A3Dff;
+    --midnight-green: rgb(250, 209, 156);
     --black: #040B07ff;
 }
 
@@ -39,6 +39,9 @@ body{
 }
 
 .logo-background{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     position:absolute;
     top:20%;
     width:inherit;
@@ -46,16 +49,7 @@ body{
     background-color: rgb(255,255,255,0.5);
 }
 
-.logo{
-    position:absolute;
-    top:27%;
-    left:25%;
-    text-align: center;
-
-}
 .logo-text{
-    position: absolute;
-    top:5%;
     padding-left: 15px;
     font-size: 42px;
     font-weight: bolder;
@@ -84,19 +78,29 @@ img{
 .title-form, .form-body, .form-submit{
 
 
-    height:33vh;
+    height:30vh;
     width:67vw;
-    padding-left:15px;
-    padding:5px;
-    background-color: var(--thistle);
+    padding-left:25px;
+    padding:15px;
+    background-color: var(--sky-blue);
+    color:rgb(78, 74, 74);
 }
 
 .form-body{
     display:flex;
     flex-direction: column;
-    background-color: var(--midnight-green);
+    background-color: var( --persimmon);
     gap: 1em;
+    color:black;
+    box-shadow: 5px 2px 2px grey;
+    border-radius: 5px;
 }
+
+.img-ref:visited,
+.img-ref:link{
+    color:white;
+}
+
 .form-container-text{
     display:flex;
     gap: 2em;
@@ -105,7 +109,7 @@ img{
 .form-title{
     font-size: 22px;
     font-weight: bold;
-    color:white;
+    color:black;
 }
 
 input:valid{
@@ -115,19 +119,19 @@ input:valid{
 }
 
 .login{
-    color:var(--cambridge-blue);
+    color:var(--persimmon);
     font-weight: bolder;
 }
 
 input:invalid{
     outline: none;
-    border-width: 1px;
-    border-color:rgb(133, 44, 44);
+    border-width: 3px;
+    border-color:rgb(97, 7, 7);
 }
 .input-group{
     flex: 1;
     display:flex;
-    color:white;
+    color:black;
     flex-direction: column;
     padding:5px;
 }
@@ -172,10 +176,10 @@ input:focus{
 }
 
 .submit-button{
-    background-color: var(--cambridge-blue);
+    background-color: var(--persimmon);
     padding:1em;
     border-radius: 5px;
-    color:white;
+    color:black;
     font-weight: bold;
     width:20em;
 }
@@ -194,4 +198,9 @@ input:focus{
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 15px;
+}
+
+.log-in{
+    padding-top:20px;
+    padding-left:15px;
 }
