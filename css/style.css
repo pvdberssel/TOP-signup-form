@@ -68,4 +68,21 @@ img{
     border-radius: 5px;
     color:white;
     font-weight: bold;
+    width:20em;
+}
+
+.title-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap:3em;
+
+}
+
+.info-text{
+    width:50vw;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
 }
