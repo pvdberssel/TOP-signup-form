@@ -1,0 +1,21 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+}
+
+.sidebar{
+    width:33vw;
+    min-width: 33vw;
+    height: 100vh;
+}
+img{
+    width:inherit;
+    min-width: inherit;
+    height: 100vh;
+}
