@@ -19,6 +19,12 @@
     --black: #040B07ff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body{
     display:flex;
 }
@@ -63,6 +69,7 @@ img{
     display:flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 
 .title-form, .form-body, .form-submit{
@@ -102,13 +109,33 @@ label{
     padding:5px;
 }
 
-input{
-    padding:5px;
-    border-radius: 5px;
+button,
+input,
+select,
+textarea{
+    font-family:inherit;
+    font-size:100%;
+    width: 250px;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
 }
 
-input:active{
-    border-color:rgb(42, 80, 48);
+input{
+    padding:5px;
+    border-radius: 10px;
+    outline:none;
+    box-shadow: none;
+    border-color:var(--thistle);
+    border-style: solid;
+    border-width: 2px;
+}
+
+input:focus{
+    outline: none;
+    border-width: 3px;
+    border-color:var(--sky-blue);
+    box-shadow: 5px 2px 2px var(--cambridge-blue);
 }
 
 .submit-button{
